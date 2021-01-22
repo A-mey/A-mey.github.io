@@ -1,0 +1,101 @@
+:root {
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-black: #000000;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', san-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--color-grey-light-1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+
+.content {
+  display: flex;
+  height: 90vh; }
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center; }
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  font-size: 5rem; }
+  .side-nav__item {
+    cursor: pointer;
+    padding: 2rem;
+    position: relative;
+    z-index: 10; }
+    .side-nav__item--link {
+      cursor: pointer;
+      color: var(--color-grey-light-1);
+      z-index: 10;
+      text-decoration: none;
+      margin: 0 1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .side-nav__item--link--icon {
+        fill: currentColor;
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem; }
+    .side-nav__item:before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: black;
+      transform: scaleY(0);
+      transition: transform .2s, width .2s .4s; }
+    .side-nav__item:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+      color: var(--color-grey-light-1); }
+
+.item-clicked {
+  width: 105%;
+  background-image: linear-gradient(to right, var(--color-grey-dark-3) 0 2rem, var(--color-black) 0);
+  height: 12rem;
+  display: flex;
+  align-items: center; }
+
+.link-clicked {
+  margin-left: 4rem; }

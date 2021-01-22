@@ -1,0 +1,11 @@
+.item-clicked {
+    width: 105%;
+    background-image: linear-gradient(to right, var(--color-grey-dark-3) 0 2rem, var(--color-black) 0);
+    height: 12rem;
+    display: flex;
+    align-items: center;
+}
+
+.link-clicked {
+    margin-left: 4rem;
+}
