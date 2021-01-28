@@ -6,7 +6,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <script src="myscripts.js"></script>
+        
         <title>Resume</title>
     </head>
     <body>
@@ -15,7 +15,7 @@
                 <nav class="sidebar">
                     <ul class="side-nav">
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__item--link">
+                            <a href="#page1" class="side-nav__item--link" data-page="page1">
                                 <svg class="side-nav__item--link--icon">
                                     <use xlink:href="img/sprite.svg#icon-emoji-happy"></use>
                                 </svg>
@@ -23,15 +23,7 @@
                             </a>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__item--link">
-                                <svg class="side-nav__item--link--icon">
-                                    <use xlink:href="img/sprite.svg#icon-graduation-cap"></use>
-                                </svg>
-                                <span>Education</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__item--link">
+                            <a href="#page2" class="side-nav__item--link" data-page="page2">
                                 <svg class="side-nav__item--link--icon">
                                     <use xlink:href="img/sprite.svg#icon-suitcase"></use>
                                 </svg>
@@ -39,7 +31,15 @@
                             </a>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__item--link">
+                            <a href="#page3" class="side-nav__item--link" data-page="page3">
+                                <svg class="side-nav__item--link--icon">
+                                    <use xlink:href="img/sprite.svg#icon-graduation-cap"></use>
+                                </svg>
+                                <span>Education</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#page4" class="side-nav__item--link" data-page="page4">
                                 <svg class="side-nav__item--link--icon">
                                     <use xlink:href="img/sprite.svg#icon-medal"></use>
                                 </svg>
@@ -51,13 +51,154 @@
             </div>
 
             <main>
-                <div class="about">
-                    <div class="about__var">Name</div>
-                    <div class="about__val">Ameya Ajay Patil</div>                    
+                <div class="about" id="page1">
+                    <div class="about__top">
+                        <div class="about__top--left">
+                            <div class="infoblock">
+                                <div class="infoblock__top">
+                                    <div class="infoblock__top--var">Name:</div>
+                                </div>
+                                <div class="infoblock__val">Ameya Ajay Patil</div>
+                            </div>
+                            
+                            <div class="infoblock">
+                                <div class="infoblock__top">
+                                    <div class="infoblock__top--var">Age:</div>
+                                </div>
+                                <div class="infoblock__val">27</div>
+                            </div>
+                        </div>
+
+                        <div class="about__top--right">
+                            <div class="infoblock">
+                                <div class="infoblock__top">
+                                    <svg class="infoblock__top--icon">
+                                        <use xlink:href="img/sprite.svg#icon-old-phone"></use>
+                                    </svg>
+                                    <div class="infoblock__top--var">Phone No:</div>
+                                </div>
+                                <div class="infoblock__val">9892198417</div>
+                            </div>
+        
+                            <div class="infoblock">
+                                <div class="infoblock__top">
+                                    <svg class="infoblock__top--icon">
+                                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                    <div class="infoblock__top--var">Mail:</div>
+                                </div>
+                                <div class="infoblock__val">amey2p@gmail.com</div>
+                            </div>
+        
+                            <div class="infoblock">
+                                <div class="infoblock__top">
+                                    <svg class="infoblock__top--icon">
+                                        <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                                    </svg>
+                                    <div class="infoblock__top--var">Location:</div>
+                                </div>
+                                <div class="infoblock__val">Airoli, Navi Mumbai</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1>
+                        Profile:
+                    </h1>
+
+                    <div class="infoblock__val"></div>
+
                 </div>
+
+                <div class="work" id="page2">
+                    
+                </div>
+
+                <div class="education" id="page3">
+                    <div class="edublock">
+                        <h2>S.S.C</h2>
+                        <div class="edublock__school">
+                            <div>Smt. Radhikabai Meghe Vidyalaya</div>
+                            <div>Maharashtra State Board</div>
+                        </div>
+                        <div class="edublock__score">
+                            <span class="edublock__score--var">Percentage:</span>
+                            <span class="edublock__score--val">88.46%</span>
+                        </div>
+                        <div class="edublock__score">
+                            <span class="edublock__score--var">Mathematics:</span>
+                            <span class="edublock__score--val">148/150</span>
+                        </div>                                                 
+                    </div>
+
+                    <hr>
+                    
+                    <div class="edublock">
+                        <h2>H.S.C</h2>
+                        <div class="edublock__school">
+                            <div>SK Somaiya Junior College of Arts, Science and Commerce</div>
+                            <div>Maharashtra State Board</div>
+                        </div>
+                        <div class="edublock__score">
+                            <span class="edublock__score--var">Percentage:</span>
+                            <span class="edublock__score--val">77.77%</span>
+                        </div>
+                        <div class="edublock__score">
+                            <span class="edublock__score--var">Mathematics:</span>
+                            <span class="edublock__score--val">93/100</span>
+                        </div>                                             
+                    </div>
+
+                    <hr>
+
+                    <div class="edublock">
+                        <h2 class="edublock__incomplete">B.E(incomplete)</h2>
+                        <div class="edublock__school">
+                            <div>Don Bosco Institute of Technology</div>
+                            <div>Mumbai University</div>
+                        </div>
+                        <div class="edublock__med">
+                            Wasn't able to complete due to health issues and other personal problems. Will provide medical documents if required.
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="edublock">
+                        <h2>B.Sc in Computer Science</h2>
+                        <div class="edublock__school">
+                            <div>
+                                VPM's RZ Shah College of Arts, Science & Commerce
+                            </div>
+                            <div>Mumbai University</div>
+                            <div>Class of 2020</div>
+                        </div>
+                        <div class="edublock__score">
+                            <span class="edublock__score--var">CGPA:</span>
+                            <span class="edublock__score--val">5.86</span>
+                        </div>                                               
+                    </div>
+
+                <div class="skills" id="page4">
+                                        
+                </div>
+
+                
             </main>
             
         </div>
         
     </body>
+    <script>
+
+        var items = document.querySelectorAll('.side-nav__item');
+
+        function toggleOpen() {
+            this.classList.toggle('item-clicked');
+            //this.classList.remove('side-nav__item');
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleOpen));
+        
+    </script>
 </html>
