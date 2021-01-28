@@ -3,18 +3,60 @@
     margin: 8rem auto;
     background-color: var(--color-grey-light-2);
     box-shadow: var(--shadow-dark);
+    display: flex;
 
     min-height: 50rem;
 }
 
 .content {
     display: flex;
-    height: 90vh;
+    height: auto;
 }
 
 .sidebar {
+    //background-color: var(--color-grey-dark-1);
     background-color: var(--color-grey-dark-1);
     flex: 0 0 auto;
     display: flex;
     justify-content: center;
+}
+
+.about {
+    display: none;
+
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+
+        &--left {
+            margin-right: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+        }
+
+        &--right {
+            margin-left: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+        }
+        
+    }
+}
+
+.education {
+    display: none;
+}
+
+.work {
+    display: none;
+}
+
+.skills {
+    display: none;
+}
+
+.midhead {
+    font-size: 5rem;
 }

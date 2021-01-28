@@ -1,7 +1,7 @@
 {
-  "name": "Trillo",
+  "name": "Resume",
   "version": "1.0.0",
-  "description": "trillo app",
+  "description": "Resume",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -17,11 +17,12 @@
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^8.3.1"
   },
   "dependencies": {
-    "all": "0.0.0"
+    "all": "^0.0.0",
+    "sass": "^1.32.5"
   }
 }
