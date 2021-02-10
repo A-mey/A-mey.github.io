@@ -118,3 +118,85 @@
         color: var(--color-grey-dark-1);
     }
 }
+
+.expblock {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+    &__header {
+        color: var(--color-black);
+    }
+
+    &__period {
+        color: var(--color-grey-dark-2);
+    }
+
+    &__pos {
+
+    }
+
+    &__duties {
+        margin-left: 2rem;
+        color: var(--color-grey-dark-1);
+
+        & > * {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.skills {
+    font-size: 2rem;
+    margin-left: 2rem;
+
+    & > * {
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        color: var(--color-grey-dark-1);
+        margin: 0 0 2rem 2rem;
+        & > * {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__head {
+        
+    }
+
+    &__project {
+        & > * {
+            margin-bottom: 2rem;
+        }
+        
+
+        &--title {
+
+        }
+
+        &--list {
+            margin-left: 2rem;
+            color: var(--color-grey-dark-1);
+            
+            & > * {
+                margin-bottom: 1rem;
+            }
+        
+        }
+    }
+
+    &__projectblock {
+
+        &--var {
+            font-weight: 800;
+        }
+
+        &--val {
+            color: var(--color-grey-dark-1);
+            margin-left: .5rem;
+        }
+    }
+
+
+}
