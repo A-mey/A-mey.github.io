@@ -191,6 +191,56 @@ main {
   color: var(--color-grey-dark-1);
 }
 
+.expblock {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.expblock__header {
+  color: var(--color-black);
+}
+.expblock__period {
+  color: var(--color-grey-dark-2);
+}
+.expblock__duties {
+  margin-left: 2rem;
+  color: var(--color-grey-dark-1);
+}
+.expblock__duties > * {
+  margin-bottom: 1rem;
+}
+
+.skills {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.skills > * {
+  margin-bottom: 2rem;
+}
+.skills__list {
+  color: var(--color-grey-dark-1);
+  margin: 0 0 2rem 2rem;
+}
+.skills__list > * {
+  margin-bottom: 1rem;
+}
+.skills__project > * {
+  margin-bottom: 2rem;
+}
+.skills__project--list {
+  margin-left: 2rem;
+  color: var(--color-grey-dark-1);
+}
+.skills__project--list > * {
+  margin-bottom: 1rem;
+}
+.skills__projectblock--var {
+  font-weight: 800;
+}
+.skills__projectblock--val {
+  color: var(--color-grey-dark-1);
+  margin-left: 0.5rem;
+}
+
 .item-clicked {
   width: 105%;
   background-image: linear-gradient(to right, var(--color-grey-dark-3) 0 2rem, var(--color-black) 0);
