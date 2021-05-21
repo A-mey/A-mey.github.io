@@ -1,13 +1,31 @@
-.item-clicked {
-    width: 105%;
-    background-image: linear-gradient(to right, var(--color-grey-dark-3) 0 2rem, var(--color-black) 0);
-    height: 12rem;
-    display: flex;
-    align-items: center;
+#routedContent.ng-enter {
+    width: 0;
+    opacity:0;
+ 
+    -webkit-transition: all 1s cubic-bezier(1,.01,0,.99);
+    -moz-transition: all 1s cubic-bezier(1,.01,0,.99);
+    -ms-transition: all 1s cubic-bezier(1,.01,0,.99);
+    -o-transition: all 1s cubic-bezier(1,.01,0,.99);
+    transition: all 1s cubic-bezier(1,.01,0,.99);
 }
-
-.link-clicked {
-    margin-left: 4rem;
+ 
+#routedContent.ng-enter-active {
+    width: 100vh;
+    opacity: 1;
 }
-
-:target {display: block;}
+ 
+#routedContent.ng-leave {
+    width: 100vh;
+    opacity: 1;
+ 
+    -webkit-transition: all 1s cubic-bezier(1,.01,0,.99);
+    -moz-transition: all 1s cubic-bezier(1,.01,0,.99);
+    -ms-transition: all 1s cubic-bezier(1,.01,0,.99);
+    -o-transition: all 1s cubic-bezier(1,.01,0,.99);
+    transition: all 1s cubic-bezier(1,.01,0,.99);
+}
+ 
+#routedContent.ng-leave-active {
+    width: -100vh;
+    opacity: 0;
+}

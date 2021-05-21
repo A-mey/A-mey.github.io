@@ -54,19 +54,33 @@ main {
   display: flex;
   justify-content: center; }
 
-.about__top {
-  display: flex;
-  justify-content: flex-start; }
-  .about__top--left {
-    margin-right: 4rem;
+.about {
+  display: none; }
+  .about__top {
     display: flex;
-    flex-direction: column;
-    align-content: flex-start; }
-  .about__top--right {
-    margin-left: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start; }
+    justify-content: flex-start; }
+    .about__top--left {
+      margin-right: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start; }
+    .about__top--right {
+      margin-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start; }
+
+.education {
+  display: none; }
+
+.work {
+  display: none; }
+
+.skills {
+  display: none; }
+
+.midhead {
+  font-size: 5rem; }
 
 .side-nav {
   display: flex;
@@ -180,28 +194,15 @@ main {
     color: var(--color-grey-dark-1);
     margin-left: .5rem; }
 
-#routedContent.ng-enter {
-  width: 0;
-  opacity: 0;
-  -webkit-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  -moz-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  -ms-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  -o-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  transition: all 1s cubic-bezier(1, 0.01, 0, 0.99); }
+.item-clicked {
+  width: 105%;
+  background-image: linear-gradient(to right, var(--color-grey-dark-3) 0 2rem, var(--color-black) 0);
+  height: 12rem;
+  display: flex;
+  align-items: center; }
 
-#routedContent.ng-enter-active {
-  width: 100vh;
-  opacity: 1; }
+.link-clicked {
+  margin-left: 4rem; }
 
-#routedContent.ng-leave {
-  width: 100vh;
-  opacity: 1;
-  -webkit-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  -moz-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  -ms-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  -o-transition: all 1s cubic-bezier(1, 0.01, 0, 0.99);
-  transition: all 1s cubic-bezier(1, 0.01, 0, 0.99); }
-
-#routedContent.ng-leave-active {
-  width: -100vh;
-  opacity: 0; }
+:target {
+  display: block; }
